@@ -1,0 +1,282 @@
+<?xml version = '1.0' encoding = 'windows-1252'?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5">
+  <servlet>
+    <servlet-name>Faces Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Faces Servlet</servlet-name>
+    <url-pattern>/faces/*</url-pattern>
+  </servlet-mapping>
+ 
+   <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+    <!-- Login.jsp to LoginServlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/loginPath</url-pattern>
+    </servlet-mapping>
+        <!-- Currency.jsp to ConvertServlet -->
+    <servlet>
+        <servlet-name>ConvertServlet</servlet-name>
+        <servlet-class>controllers.ConvertServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ConvertServlet</servlet-name>
+        <url-pattern>/currencyPath</url-pattern>
+    </servlet-mapping>
+    <!-- Convert.jsp to ExchangeConfirmationServlet -->
+    <servlet>
+        <servlet-name>ExchangeConfirmationServlet</servlet-name>
+        <servlet-class>controllers.ExchangeConfirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExchangeConfirmationServlet</servlet-name>
+        <url-pattern>/exchangeConfirmationPath</url-pattern>
+    </servlet-mapping>
+    <!-- ExchangeConfirmation.jsp to ExchangeServlet -->
+    <servlet>
+        <servlet-name>ExchangeServlet</servlet-name>
+        <servlet-class>controllers.ExchangeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ExchangeServlet</servlet-name>
+        <url-pattern>/exchangePath</url-pattern>
+    </servlet-mapping>
+     <!-- Transfer.jsp to TransferConfirmationServlet -->
+    <servlet>
+        <servlet-name>TransferConfirmationServlet</servlet-name>
+        <servlet-class>controllers.TransferConfirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TransferConfirmationServlet</servlet-name>
+        <url-pattern>/transferConfirmationPath</url-pattern>
+    </servlet-mapping>
+    <!-- TransferConfirmation.jsp to TransferServlet -->
+    <servlet>
+        <servlet-name>TransferServlet</servlet-name>
+        <servlet-class>controllers.TransferServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TransferServlet</servlet-name>
+        <url-pattern>/transferPath</url-pattern>
+    </servlet-mapping>
+    <!-- Application.jsp to ApplicationConfirmationServlet -->
+    <servlet>
+        <servlet-name>ApplicationConfirmationServlet</servlet-name>
+        <servlet-class>controllers.ApplicationConfirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationConfirmationServlet</servlet-name>
+        <url-pattern>/applicationPath</url-pattern>
+    </servlet-mapping>
+    <!-- ApplicationConfirmation.jsp to ApplicationServlet -->
+    <servlet>
+        <servlet-name>ApplicationServlet</servlet-name>
+        <servlet-class>controllers.ApplicationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationServlet</servlet-name>
+        <url-pattern>/applicationConfirmationPath</url-pattern>
+    </servlet-mapping>
+    <!-- ApplicationRemove.jsp to ApplicationRemoveConfirmationServlet -->
+    <servlet>
+        <servlet-name>ApplicationRemoveConfirmationServlet</servlet-name>
+        <servlet-class>controllers.ApplicationRemoveConfirmationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationRemoveConfirmationServlet</servlet-name>
+        <url-pattern>/applicationRemovePath</url-pattern>
+    </servlet-mapping>
+    <!-- ApplicationRemoveConfirmation.jsp to ApplicationRemoveServlet -->
+    <servlet>
+        <servlet-name>ApplicationRemoveServlet</servlet-name>
+        <servlet-class>controllers.ApplicationRemoveServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApplicationRemoveServlet</servlet-name>
+        <url-pattern>/applicationRemoveConfirmationPath</url-pattern>
+    </servlet-mapping>
+    <!-- ChangePin.jsp to ChangePinServlet -->
+    <servlet>
+        <servlet-name>ChangePinServlet</servlet-name>
+        <servlet-class>controllers.ChangePinServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ChangePinServlet</servlet-name>
+        <url-pattern>/changePinPath</url-pattern>
+    </servlet-mapping>
+    <!-- registerPage.jsp to RegisterServlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>controllers.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/registerPath</url-pattern>
+    </servlet-mapping>
+    <!-- ForgotPassword.jsp to PassRecoveryServlet -->
+    <servlet>
+        <servlet-name>PassRecoveryServlet</servlet-name>
+        <servlet-class>controllers.PassRecoveryServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PassRecoveryServlet</servlet-name>
+        <url-pattern>/forgotpassPath</url-pattern>
+    </servlet-mapping>
+        <!-- ForgotPassword.jsp to PassChangeServlet -->
+    <servlet>
+        <servlet-name>PassChangeServlet</servlet-name>
+        <servlet-class>controllers.PassChangeServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PassChangeServlet</servlet-name>
+        <url-pattern>/changepassPath</url-pattern>
+    </servlet-mapping>
+  <!--Product -->
+   <servlet>
+        <servlet-name>productpage</servlet-name>
+        <servlet-class>controllers.ProductPage</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>productpage</servlet-name>
+        <url-pattern>/productpage/*</url-pattern>
+    </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>controllers.CartManager</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+      <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+    <servlet-name>EditManager</servlet-name>
+    <servlet-class>controllers.EditPage</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>EditManager</servlet-name>
+      <url-pattern>/EditManager</url-pattern>
+  </servlet-mapping>
+  
+     <servlet>
+    <servlet-name>EditManager2</servlet-name>
+    <servlet-class>controllers.EditManager</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>EditManager2</servlet-name>
+      <url-pattern>/Edit</url-pattern>
+  </servlet-mapping>
+   
+   <servlet>
+     <servlet-name>productDetail</servlet-name>
+    <servlet-class>controllers.ViewPage</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>productDetail</servlet-name>
+      <url-pattern>/productDetail</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>ReviewManager</servlet-name>
+    <servlet-class>controllers.ReviewManager</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>ReviewManager</servlet-name>
+      <url-pattern>/ReviewManagerPage</url-pattern>
+  </servlet-mapping>
+  
+<servlet>
+     <servlet-name>QSManager</servlet-name>
+    <servlet-class>controllers.QSManager</servlet-class>
+  </servlet>
+
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>QSManager</servlet-name>
+      <url-pattern>/QSManager</url-pattern>
+  </servlet-mapping>
+  
+  <!--Display photo-->
+  <servlet>
+    <servlet-name>DisplayPhotoServlet</servlet-name>
+    <servlet-class>controllers.DisplayPhotoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayPhotoServlet</servlet-name>
+    <url-pattern>/displayphoto</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>DisplayuserPhotoServlet</servlet-name>
+    <servlet-class>controllers.DisplayUserPhotoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DisplayuserPhotoServlet</servlet-name>
+    <url-pattern>/displayuserphoto</url-pattern>
+  </servlet-mapping>
+  
+  
+
+  <!-- Captcha -->
+  <servlet>
+<servlet-name>jcaptcha</servlet-name>
+<servlet-class>com.octo.captcha.module.servlet.image.SimpleImageCaptchaServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>jcaptcha</servlet-name>
+<url-pattern>/jcaptcha.jpg</url-pattern>
+</servlet-mapping>
+
+  <!-- Logout -->
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>controllers.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/Logout</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Verify -->
+  <servlet>
+    <servlet-name>VerifyManager</servlet-name>
+    <servlet-class>controllers.VerifyManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VerifyManager</servlet-name>
+    <url-pattern>/verifyAccount</url-pattern>
+  </servlet-mapping>
+  
+   <!-- Verify -->
+  <servlet>
+    <servlet-name>UpdateUser</servlet-name>
+    <servlet-class>controllers.UserManager</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateUser</servlet-name>
+    <url-pattern>/UpdateUser</url-pattern>
+  </servlet-mapping>
+
+</web-app>

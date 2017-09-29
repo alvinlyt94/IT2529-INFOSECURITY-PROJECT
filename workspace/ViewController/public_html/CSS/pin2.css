@@ -1,0 +1,84 @@
+.patternlockbuttoncontainer{
+	position:absolute;
+	width:300px;
+}
+
+.patternlocklineshorizontalcontainer{
+	position:absolute;
+	width:250px;
+	padding:22px;
+}
+
+.patternlocklinesverticalcontainer{
+	position:absolute;
+	width:260px;
+	padding:22px;
+}
+
+.patternlocklinesdiagonalcontainer{
+	position:absolute;
+	width:240px;
+	padding:22px;
+}
+
+.patternlockbutton{
+	background-image:url(../pinImages/button.png);
+	background-repeat:no-repeat;
+	display:block;
+	width:53px;
+	height:53px;
+	float:left;
+	margin:16px;
+}
+
+.touched{
+	background-image:url(../pinImages/button_active2.png);
+}
+
+.multiple{
+	background-image:url(../pinImages/button_active2.png);
+}
+
+.patternlocklinehorizontal{
+	background-image:url(../pinImages/horizontal.png);
+	background-repeat:no-repeat;
+	height:83px;
+	width:53px;
+	display:block;
+	float:left;
+	margin:2px -7px 0px 38px;
+	visibility:hidden;
+}
+
+.patternlocklinevertical{
+	background-image:url(../pinImages/vertical.png);
+	background-repeat:no-repeat;
+	height:53px;
+	width:83px;
+	display:block;
+	float:left;
+	margin:38px 0px -7px 3px;
+	visibility:hidden;
+}
+
+.patternlocklinediagonalforward{
+	background-image:url(../pinImages/diagonal1.png);
+	background-repeat:no-repeat;
+	height:83px;
+	width:83px;
+	display:block;
+	float:left;
+	margin:26px -26px -24px 26px;
+	visibility:hidden;
+}
+
+.patternlocklinediagonalbackwards{
+	background-image:url(../pinImages/diagonal2.png);
+	background-repeat:no-repeat;
+	height:83px;
+	width:83px;
+	display:block;
+	float:left;
+	margin:26px -26px -24px 26px;
+	visibility:hidden;
+}

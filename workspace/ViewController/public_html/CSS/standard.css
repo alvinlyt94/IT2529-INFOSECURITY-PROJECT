@@ -1,0 +1,105 @@
+body {
+    padding: 50px;
+    background-image:url('gradient2.png');
+    background-repeat:repeat-x;
+    a:link {background-color:#B2FF99;}    /* unvisited link */
+    a:visited {background-color:#FFFF85;} /* visited link */
+    a:hover {background-color:#FF704D;}   /* mouse over link */
+    a:active {background-color:#FF704D;}  /* selected link */
+}
+/* The CSS Code for the menu starts here */
+
+#menu {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 50px 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #eee;
+    font-size: 13px;
+    height: 40px;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #ccc;
+}
+
+#menu li {
+    float: left;
+    margin: 0;
+}
+
+#menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #666;
+}
+
+#menu li a:hover, #menu li.active a {
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #DDD;
+    color: #999;
+}
+
+#menu_wrapper ul {
+    margin-left: 0;
+}
+
+#menu_wrapper {
+    padding: 0 0 0 0;
+    background: url(images/grey.png)no-repeat right;
+}
+
+#menu_wrapper div {
+    float: left;
+    height: 44px;
+    width: 12px;
+    background: url(images/grey.png)no-repeat left;
+}
+
+ul {
+  font-family: Arial, Verdana;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  text-decoration: none;
+
+  border-top: 1px solid #ffffff;
+  padding: 5px 15px 5px 15px;
+
+  margin-left: 1px;
+  white-space: nowrap;
+}
+
+li:hover ul {
+  display: block;
+  position: absolute;
+}
+li:hover li {
+  float: none;
+  font-size: 11px;
+}
+li:hover a { background: #f5f5f5; }
+li:hover li a:hover { background: #f5f5f5; }
+
+div.login{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+
+
+
